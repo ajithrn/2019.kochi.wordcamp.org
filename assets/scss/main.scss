@@ -1,6 +1,10 @@
+@import "common/normalize.scss";
 @import "common/variables";
 @import "common/global";
-@import "components/blocks";
+@import "components/widgets";
+@import "components/news";
+@import "components/sponsors";
+@import "components/tickets";
 @import "components/grid";
 @import "components/nav";
 @import "layouts/header";

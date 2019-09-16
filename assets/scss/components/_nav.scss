@@ -1,0 +1,278 @@
+/*
+  Menu
+*/
+
+.menu-toggle {
+  visibility: visible;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    cursor: pointer;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background: $white;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 50px;
+  }
+  &:before {
+    content: '🍔';
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d13144;
+    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-decoration: none;
+    height: 45px;
+    flex: 1;
+    position: absolute;
+    margin-right: 0;
+    margin-left: 0;
+    z-index: 3;
+  }
+
+  @media (min-width: $tabletSize)  {
+    display: none;
+  }
+}
+
+.dropdown-toggle {
+  display: none;
+}
+.secondary-navigation {
+  &.page-navigation-container {
+    &.toggled-on {
+      .menu-menu-1-container {
+        display: flex;
+      }
+    }
+    .menu-menu-1-container {
+      display: none;
+      @media (min-width: $tabletSize) {
+        display: flex;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background: $white;
+        margin: 0 auto;
+        max-width: 60rem;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        @media (min-width: $tabletSize) {
+          flex-direction: row;
+        }
+        li.menu-item {
+          background: $white;
+          min-width: 100px;
+          display: block;
+          padding: 0;
+          justify-content: flex-start;
+          position: relative;
+          &.current-menu-item, &.current-menu-parent {
+            &:hover {
+              & > a {
+                position: relative;
+                &:before {
+                  position: absolute;
+                  content: '';
+                  border-bottom: solid 2px $white;
+                  width: 40%;
+                  bottom: 8px;
+                  @media (min-width: $tabletSize) {
+                    bottom: 30px;
+                    width: 60%;
+                  }
+                }
+              }
+            }
+            & > a {
+              position: relative;
+              &:before {
+                position: absolute;
+                content: '';
+                border-bottom: solid 2px $primary;
+                width: 40%;
+                bottom: 8px;
+                @media (min-width: $tabletSize) {
+                  bottom: 30px;
+                  width: 60%;
+                }
+              }
+            }
+            .current-menu-item {
+              & > a {
+                &:before {
+                  display: none;
+                }
+              }
+            }
+          }
+          @media (min-width: $tabletSize) {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &.menu-item-has-children {
+            background: $white;
+            & > a {
+              color: $primary;
+            }
+          }
+          .sub-menu {
+            width: 100%;
+            padding-left: 0;
+            flex-direction: column;
+            z-index: 1;
+            display: block;
+            @media (min-width: $tabletSize) {
+              display: none;
+            }
+            .menu-item {
+              a {
+                padding-left: 15px;
+                @media (min-width: $tabletSize) {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          &:hover {
+            background: $third;
+            .sub-menu {
+              @media (min-width: $tabletSize) {
+                display: flex;
+                position: absolute;
+                top: 90px;
+                padding-left: 0;
+                left: 0;
+                width: auto;
+                min-width: 350px;
+                margin: 0;
+              }
+              li {
+                &.menu-item {
+                  &.current-menu-item {
+                    & > a {
+                      &:before {
+                        display: none;
+                      }
+                    }
+                  }
+                  &:hover {
+                    background: $primary;
+                    a {
+                      color: $white;
+                    }
+                  }
+                  a {
+                    height: 50px;
+                    color: $primary;
+                    @media (min-width: $tabletSize) {
+                      height: 60px;
+                    }
+                  }
+                }
+              }
+            }
+            a {
+              color: $white;
+            }
+          }
+          a {
+            color: $primary;
+            font-size: 18px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1;
+            text-decoration: none;
+            margin: 0 20px;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 50px;
+            @media (min-width: $tabletSize) {
+              height: 90px;
+              justify-content: center;
+            }
+          }
+          &.callout {
+            background: $primary;
+            &.current-menu-item, &.current-menu-parent {
+              &:hover {
+                & > a {
+                  position: relative;
+                  &:before {
+                    position: absolute;
+                    content: '';
+                    border-bottom: solid 2px $primary;
+                    width: 40%;
+                    bottom: 8px;
+                    @media (min-width: $tabletSize) {
+                      bottom: 30px;
+                      width: 60%;
+                    }
+                  }
+                }
+              }
+              & > a {
+                position: relative;
+                &:before {
+                  position: absolute;
+                  content: '';
+                  border-bottom: solid 2px $white;
+                  width: 60%;
+                  bottom: 30px;
+                  @media (min-width: $tabletSize) {
+                    bottom: 30px;
+                    width: 60%;
+                  }
+                }
+              }
+            }
+            @media (min-width: $tabletSize) {
+              margin-left: auto;
+            }
+            a {
+              color: $white;
+              width: 320px;
+            }
+            &:hover {
+              background: $white;
+              a {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
