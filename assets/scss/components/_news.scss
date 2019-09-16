@@ -1,0 +1,146 @@
+/* Widget latest News */
+
+.widget_recent_entries {
+  padding-top: 3rem;
+  .widget-title {
+    color: $primary;
+    font-size: 32px;
+    font-size: 2rem;
+    font-family: $font_primary;
+    text-align: center;
+  }
+  ul {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    list-style-type: none;
+    padding:3rem;
+    margin: 0;
+    @media (min-width: $tabletSize) {
+      flex-direction: row;
+    }
+  }
+  li {
+    width: 50%;
+  }
+  a {
+    display: inline-block;
+    color: $primary;
+    text-decoration: none;
+    max-width: 50%;
+    padding: 2rem 0 0;
+    position: static;
+    line-height: 1;
+    font-size:24px;
+    font-size:1.5rem;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+      &:after {
+        width: 5rem;
+      }
+    }
+    &:before {
+      content: "#WCMAD";
+      display: inline-block;
+      position: relative;
+      opacity: .1;
+      font-size: 1.5rem;
+      @media (min-width: $tabletSize) {
+        font-size: 5rem;
+      }
+      text-transform: uppercase;
+    }
+    &:after {
+      content: "";
+      margin-bottom: .5rem;
+    }
+    &::after {
+      background-color: $primary;
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: 1rem;
+      width: 4rem;
+      -webkit-transition: width .3s ease;
+      -o-transition: width .3s ease;
+      transition: width .3s ease;
+    }
+  }
+}
+
+
+.widget-title {
+  display: none;
+}
+.widget_rss {
+  margin: 30px auto;
+  @media (min-width: $tabletSize) {
+    margin: 80px auto;
+    max-width: 960px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: $tabletSize) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    li {
+      list-style: none;
+      margin-bottom: 40px;
+      @media (min-width: $tabletSize) {
+        flex: 1 0 33%;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-size: 24px;
+        margin-bottom: 20px;
+        position: relative;
+        &:after {
+          background-color: $primary;
+          content: "";
+          display: block;
+          height: 2px;
+          margin-top: 1rem;
+          width: 4rem;
+          -webkit-transition: width .3s ease;
+          -o-transition: width .3s ease;
+          transition: width .3s ease;
+        }
+        &:before {
+          content: "#WCMAD";
+          display: inline-block;
+          position: relative;
+          opacity: .1;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          position: absolute;
+          opacity: .2;
+          z-index: -1;
+          color: $fourth;
+          @media (min-width: $tabletSize) {
+            font-size: 3rem;
+            right: 0;
+            left: 0;
+            top: -10px;
+          }
+          text-transform: uppercase;
+        }
+        &:hover {
+          &:after {
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+  .rssSummary {
+    margin-top: 1rem;
+  }
+}
