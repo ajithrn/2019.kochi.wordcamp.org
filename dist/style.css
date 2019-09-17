@@ -2170,9 +2170,8 @@ td, th {
 .custom-header {
   position: relative;
   min-height: 700px;
-  background: url("https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg") no-repeat !important;
+  background: url("https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg") bottom center no-repeat !important;
   background-size: auto auto;
-  background-position: bottom center;
   background-size: cover;
   border-bottom-left-radius: 0 100%;
   border-bottom-right-radius: 0% 0% !important;
@@ -2211,7 +2210,7 @@ body:not(.home) .custom-header {
 @media (min-width: 768px) {
   body:not(.home) .custom-header {
     min-height: 350px;
-    background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg) no-repeat !important;
+    background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg) bottom center no-repeat !important;
     background-size: cover;
   }
 }
@@ -2222,6 +2221,9 @@ body:not(.home) .custom-header .custom-logo-link {
 
 body:not(.home) .custom-header img {
   max-height: 250px !important;
+  max-width: none !important;
+  height: auto;
+  width: auto;
 }
 
 body:not(.home) .custom-header .site-title {
