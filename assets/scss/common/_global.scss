@@ -19,9 +19,9 @@ body {
         border-bottom: 1px solid $primary;
         transition: all 0.4s ease-out 0s;
         &:hover {
-          box-shadow: $primary 0px -5.5rem 0px inset;
-          color: $white;
-          border-bottom: 3px solid $primary;
+          color: $secondary;
+          border-bottom: 3px solid $secondary;
+          transition: all 0.4s ease-out 0s;
         }
       }
       img {
@@ -37,7 +37,9 @@ body {
       font-size:2rem;
       line-height: 1.15;
     	margin-bottom: 10px;
-	    text-decoration: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      
       & > a {
         &:visited {
           color: #000000;
@@ -58,6 +60,7 @@ input[type="email"], input[type="text"] {
   padding: .75rem;
 }
 
+.pushbutton-wide,
 input[type="submit"] {
   background: $primary;
   border: none;
@@ -170,14 +173,12 @@ td,th {
 .entry-title,
 .widget-title,
 .front-title {
-  color: #d13144;
+  color: $primary;
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 2.8rem;
   font-weight: bold;
 }
-
-
 
 #site-navigation, body.home #primary {
   display: none;
@@ -218,4 +219,55 @@ td,th {
 }
 .entry-meta {
   display: none;
+}
+
+body:not(.home) .entry-content a.wordcamp-image__featured-image-link {
+  border-bottom: 0px;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.comments-area, .navigation.post-navigation {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  padding: .6em .5em;
+  &:focus {
+    color: #111;
+
+  }
+}
+
+select {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  padding: .6em .5em;
 }

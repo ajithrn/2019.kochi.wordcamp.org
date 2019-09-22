@@ -10,11 +10,11 @@
     text-align: center;
   }
   ul {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     list-style-type: none;
-    padding:3rem;
+    padding: 3rem;
     margin: 0;
     @media (min-width: $tabletSize) {
       flex-direction: row;
@@ -31,8 +31,8 @@
     padding: 2rem 0 0;
     position: static;
     line-height: 1;
-    font-size:24px;
-    font-size:1.5rem;
+    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
     &:hover {
       color: #000;
@@ -41,42 +41,41 @@
       }
     }
     &:before {
-      content: "#WCMAD";
+      content: '#WCKOCHI';
       display: inline-block;
       position: relative;
-      opacity: .1;
-      font-size: 1.5rem;
+      opacity: 0.1;
+      font-size: 1.3rem;
       @media (min-width: $tabletSize) {
-        font-size: 5rem;
+        font-size: 4rem;
       }
       text-transform: uppercase;
     }
     &:after {
-      content: "";
-      margin-bottom: .5rem;
+      content: '';
+      margin-bottom: 0.5rem;
     }
     &::after {
       background-color: $primary;
-      content: "";
+      content: '';
       display: block;
       height: 2px;
       margin-top: 1rem;
       width: 4rem;
-      -webkit-transition: width .3s ease;
-      -o-transition: width .3s ease;
-      transition: width .3s ease;
+      -webkit-transition: width 0.3s ease;
+      -o-transition: width 0.3s ease;
+      transition: width 0.3s ease;
     }
   }
 }
-
 
 .widget-title {
   display: none;
 }
 .widget_rss {
-  margin: 30px auto;
+  margin: 50px auto 30px;
   @media (min-width: $tabletSize) {
-    margin: 80px auto;
+    margin: 120px auto 80px;
     max-width: 960px;
   }
   ul {
@@ -93,7 +92,11 @@
       list-style: none;
       margin-bottom: 40px;
       @media (min-width: $tabletSize) {
-        flex: 1 0 33%;
+        flex: 1 0 30%;
+        margin-right: 5%;
+        &:nth-child(3n+0) {
+          margin-right: 0;
+        }
       }
       a {
         color: black;
@@ -104,24 +107,24 @@
         position: relative;
         &:after {
           background-color: $primary;
-          content: "";
+          content: '';
           display: block;
           height: 2px;
           margin-top: 1rem;
           width: 4rem;
-          -webkit-transition: width .3s ease;
-          -o-transition: width .3s ease;
-          transition: width .3s ease;
+          -webkit-transition: width 0.3s ease;
+          -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
         }
         &:before {
-          content: "#WCMAD";
+          content: '#WCKOCHI';
           display: inline-block;
           position: relative;
-          opacity: .1;
+          opacity: 0.1;
           font-size: 1.5rem;
           text-transform: uppercase;
           position: absolute;
-          opacity: .2;
+          opacity: 0.2;
           z-index: -1;
           color: $fourth;
           @media (min-width: $tabletSize) {

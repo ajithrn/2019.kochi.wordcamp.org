@@ -4,7 +4,8 @@
 
 .custom-header {
   position: relative;
-  min-height: 700px;
+  min-height: 650px;
+  padding-top: 90px;
   background: url('https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg')  bottom center no-repeat!important;
   background-size: auto auto;
   background-size: cover;
@@ -16,7 +17,7 @@
     border-bottom-right-radius: 0 100%;
   }
   @media (max-width: $mobileSize) {
-    min-height: 500px;
+    min-height: 320px;
   }
   .custom-header, .custom-logo-link {
     display: flex;
@@ -24,12 +25,17 @@
     padding: 1.5rem;
     position: relative;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 body {
   &:not(.home) {
     .custom-header {
       min-height: 200px;
+      padding-top: 90px;
       @media (min-width: $tabletSize) {
         min-height: 350px;
         background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg)  bottom center no-repeat!important;

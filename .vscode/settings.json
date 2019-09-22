@@ -18,7 +18,7 @@
  "liveSassCompile.settings.includeItems": [
     "assets/scss/main.scss"
  ],
- "liveSassCompile.settings.generateMap": false,
+ "liveSassCompile.settings.generateMap": true,
  "liveSassCompile.settings.autoprefix": [
      "> 1%",
      "last 2 versions"

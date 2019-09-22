@@ -87,23 +87,25 @@
 
 
 // home widgets
-.front-title {
+h2.intro-text {
   font-family: $font_primary;
+  color: $primary;
+  line-height: 1.5;
   max-width:960px;
   margin:0 auto;
-  padding:3rem;
+  padding:6rem 3rem 3rem 3rem;
+  text-align: center;
+  font-size: 20px;
   @media (max-width: $desktopSize) {
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 20px;
   }
   @media (max-width: $tabletSize) {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 18px;
     text-align: center;
   }
   @media (max-width: $mobileSize) {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 16px;
+    font-size: 1.1rem;
     padding: 3rem 1rem;
   }
 }
@@ -134,10 +136,10 @@
       transform: scale(5) translateZ(0);
     }
     .circle {
-      border-color: #E88B9A;
+      border-color: lighten($primary, 20%);
       background: $third;
       &:after {
-        background: #E88B9A;
+        background: lighten($primary, 20%);
       }
     }
     p {
@@ -191,7 +193,7 @@
   position: absolute;
   height: 118px;
   border-radius: 50%;
-  background: #da3e57;
+  background: $primary;
   top: 70px;
   left: 100px;
   z-index: 0;
