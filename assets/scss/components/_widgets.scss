@@ -199,3 +199,19 @@ h2.intro-text {
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
+
+
+.jetpack_subscription_widget {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  #subscribe-email {
+    display: inline-block;
+  }
+  #subscribe-submit {
+    display: inline-block;
+    button {
+      @extend .pushbutton-wide;
+    }
+
+  }
+}

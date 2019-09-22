@@ -12,8 +12,7 @@
   position: relative;
   z-index: 1;
   color: $primary;
-  font-size: 18px;
-  font-size: 1.2rem;
+  font-size: 0px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -36,6 +35,7 @@
     position: absolute;
     z-index: 3;
     color: $primary;
+    font-size: 1.4rem;
   }
   &:after {
     content: '☰';
@@ -47,8 +47,8 @@
     justify-content: end;
     z-index: 2;
     flex: 1;
+    font-size: 1.5rem;
   }
-
 
   @media (min-width: $tabletSize) {
     display: none;
@@ -150,15 +150,17 @@
               color: $white;
             }
           }
-          .sub-menu {       
+          .sub-menu {
             width: 100%;
             padding-left: 0;
             flex-direction: column;
             z-index: 1;
             display: block;
+            margin: 0;
+            font-size: 1rem;
             @media (min-width: $tabletSize) {
               display: none;
-              background: $white;     
+              background: $white;
             }
             .menu-item {
               text-align: left;
@@ -171,7 +173,9 @@
             }
           }
           &:hover {
-            background: $white;            
+            @media (min-width: $tabletSize) {
+              background: $white;
+            }
             .sub-menu {
               @media (min-width: $tabletSize) {
                 display: flex;
@@ -187,6 +191,7 @@
                 &.menu-item {
                   &.current-menu-item {
                     & > a {
+                      
                       &:before {
                         display: none;
                       }
@@ -201,8 +206,9 @@
                   }
                   a {
                     height: 50px;
-                    color: $primary;
+                    color: $white;
                     @media (min-width: $tabletSize) {
+                      color: $primary;
                       height: 60px;
                     }
                   }
@@ -210,11 +216,13 @@
               }
             }
             a {
-              color: $primary;
+              @media (min-width: $tabletSize) {
+                color: $primary;
+              }
             }
           }
           a {
-            color: $white;;
+            color: $white;
             font-size: 18px;
             font-size: 1.2rem;
             font-weight: 900;
@@ -281,7 +289,9 @@
             &:hover {
               background: $white;
               a {
-                color: $primary;
+                @media (min-width: $tabletSize) {
+                  color: $primary;
+                }
               }
             }
           }

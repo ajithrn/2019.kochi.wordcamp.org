@@ -81,8 +81,10 @@ input[type='submit'] {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  @include transition (0.5s, ease);
   &:hover {
     background: $third;
+    @include transition (0.5s, ease);
   }
 }
 
@@ -241,6 +243,8 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link {
 .navigation.post-navigation {
   max-width: 960px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# Forms-*/
@@ -276,5 +280,6 @@ select {
 
 textarea {
   width: 100%;
+  max-width: 100%;
   padding: 0.6em 0.5em;
 }
