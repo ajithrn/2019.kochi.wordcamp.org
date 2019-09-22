@@ -17,11 +17,15 @@ body {
         color: $black;
         text-decoration: none;
         border-bottom: 1px solid $primary;
-        transition: all 0.4s ease-out 0s;
+         -webkit-transition: width 0.3s ease;
+          -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
         &:hover {
           color: $secondary;
-          border-bottom: 3px solid $secondary;
-          transition: all 0.4s ease-out 0s;
+          border-bottom: 2px solid $primary;
+           -webkit-transition: width 0.3s ease;
+          -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
         }
       }
       img {
@@ -233,9 +237,7 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link {
   margin: 0 auto;
 }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
+/*# Forms-*/
 
 input[type="text"],
 input[type="email"],

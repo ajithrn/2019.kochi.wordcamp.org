@@ -254,15 +254,15 @@ body:not(.home) .entry-content a {
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #b356f3;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 body:not(.home) .entry-content a:hover {
   color: #9284fe;
-  border-bottom: 3px solid #9284fe;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+  border-bottom: 2px solid #b356f3;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -470,9 +470,7 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link:hover {
   margin: 0 auto;
 }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
+/*# Forms-*/
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -2445,20 +2443,25 @@ body:not(.home) .site-main {
 
 /* post navigation */
 /* Post Navigation */
-.post-navigation, .posts-navigation {
+.post-navigation,
+.posts-navigation {
   *zoom: 1;
 }
 
-.post-navigation:after, .post-navigation:before, .posts-navigation:after, .posts-navigation:before {
-  content: "";
+.post-navigation:after, .post-navigation:before,
+.posts-navigation:after,
+.posts-navigation:before {
+  content: '';
   display: table;
 }
 
-.post-navigation:after, .posts-navigation:after {
+.post-navigation:after,
+.posts-navigation:after {
   clear: both;
 }
 
-.post-navigation .screen-reader-text, .posts-navigation .screen-reader-text {
+.post-navigation .screen-reader-text,
+.posts-navigation .screen-reader-text {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -2467,43 +2470,50 @@ body:not(.home) .site-main {
   overflow: hidden;
 }
 
-.post-navigation a, .posts-navigation a {
+.post-navigation a,
+.posts-navigation a {
   display: block;
   color: #b356f3;
   border-bottom: 2.5px solid #b356f3;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
   text-decoration: none;
+  padding: 3px 10px;
 }
 
-.post-navigation a:hover, .posts-navigation a:hover {
-  -webkit-box-shadow: #b356f3 0px -5.5rem 0px inset;
-          box-shadow: #b356f3 0px -5.5rem 0px inset;
+.post-navigation a:hover,
+.posts-navigation a:hover {
+  -webkit-box-shadow: #9284fe 0px -5.5rem 0px inset;
+          box-shadow: #9284fe 0px -5.5rem 0px inset;
   color: #FFFFFF;
-  border-bottom: 3px solid #b356f3;
+  border-bottom: 3px solid #9284fe;
 }
 
-.post-navigation .nav-previous, .posts-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
   float: left;
   text-align: left;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
-.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before {
-  margin-right: .5rem;
+.post-navigation .nav-previous a:before,
+.posts-navigation .nav-previous a:before {
+  margin-right: 0.5rem;
   display: inline-block;
-  content: "\2190";
+  content: '\2190';
 }
 
-.post-navigation .nav-next, .posts-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
   float: right;
   text-align: right;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
-.post-navigation .nav-next a:after, .posts-navigation .nav-next a:after {
-  margin-left: .5rem;
+.post-navigation .nav-next a:after,
+.posts-navigation .nav-next a:after {
+  margin-left: 0.5rem;
   display: inline-block;
-  content: "\2192";
+  content: '\2192';
 }
 /*# sourceMappingURL=style.css.map */
