@@ -1,0 +1,18 @@
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+  transition-property: all;
+}
+
+@mixin link-style($link-text, $link-decoration, $link-hover) {
+  a {
+    color: $link-text;
+    text-decoration: $link-decoration;
+    @include transition (0.5s, ease);
+    &:hover {
+      color: $link-hover;
+      @include transition (0.5s, ease);
+    }
+  }
+}

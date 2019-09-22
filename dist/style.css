@@ -259,8 +259,8 @@ body:not(.home) .entry-content a {
 }
 
 body:not(.home) .entry-content a:hover {
-  color: #9284fe;
-  border-bottom: 2px solid #b356f3;
+  color: #b356f3;
+  border-bottom: 3px solid #9284fe;
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
@@ -290,12 +290,27 @@ body .entry-content ul li {
   margin-bottom: 15px;
 }
 
-input[type="email"], input[type="text"] {
-  padding: .75rem;
+a {
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+a:hover {
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+input[type='email'],
+input[type='text'] {
+  padding: 0.75rem;
 }
 
 .pushbutton-wide,
-input[type="submit"] {
+input[type='submit'] {
   background: #b356f3;
   border: none;
   color: #FFFFFF;
@@ -312,11 +327,12 @@ input[type="submit"] {
 }
 
 .pushbutton-wide:hover,
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background: #66b1fd;
 }
 
-h2, .entry-title {
+h2,
+.entry-title {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -334,8 +350,9 @@ table {
   margin-bottom: 1.5rem;
 }
 
-td, th {
-  padding: .5rem 1rem;
+td,
+th {
+  padding: 0.5rem 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 16px;
   font-size: 1rem;
@@ -343,7 +360,8 @@ td, th {
 }
 
 @media (min-width: 48em) {
-  td, th {
+  td,
+  th {
     padding: 1rem;
   }
 }
@@ -372,7 +390,7 @@ td, th {
 }
 
 .site-info-generator::after {
-  content: "/";
+  content: '/';
   display: inline;
   padding: 0 7px 0 10px;
   white-space: pre;
@@ -414,7 +432,8 @@ td, th {
   font-weight: bold;
 }
 
-#site-navigation, body.home #primary {
+#site-navigation,
+body.home #primary {
   display: none;
 }
 
@@ -436,19 +455,22 @@ td, th {
   text-align: center;
 }
 
-.entry-meta, .entry-footer {
+.entry-meta,
+.entry-footer {
   font-size: 12px;
   color: grey;
   opacity: 0.5;
 }
 
-.entry-meta a, .entry-footer a {
+.entry-meta a,
+.entry-footer a {
   color: grey;
   text-decoration: none;
   border-bottom: 1px solid #b356f3;
 }
 
-.entry-meta .edit-link, .entry-footer .edit-link {
+.entry-meta .edit-link,
+.entry-footer .edit-link {
   margin-left: 20px;
 }
 
@@ -465,49 +487,50 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link:hover {
           box-shadow: none;
 }
 
-.comments-area, .navigation.post-navigation {
+.comments-area,
+.navigation.post-navigation {
   max-width: 960px;
   margin: 0 auto;
 }
 
 /*# Forms-*/
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 0px;
-  padding: .6em .5em;
+  padding: 0.6em 0.5em;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='color']:focus,
 textarea:focus {
   color: #111;
 }
@@ -518,7 +541,7 @@ select {
 
 textarea {
   width: 100%;
-  padding: .6em .5em;
+  padding: 0.6em 0.5em;
 }
 
 /* google map */
