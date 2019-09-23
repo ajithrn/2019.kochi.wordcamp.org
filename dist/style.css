@@ -409,7 +409,9 @@ th {
   white-space: pre;
 }
 
-.hentry .error-404 {
+.hentry, .comments-area,
+.navigation.post-navigation,
+.error-404 {
   margin: 0 auto;
   max-width: 960px;
   padding: 3rem 1rem;
@@ -418,10 +420,7 @@ th {
 
 .comments-area,
 .navigation.post-navigation {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1rem;
-  width: calc(100% - 3rem);
+  padding: 0rem 1rem;
 }
 
 .single-post .entry-title {
@@ -2593,7 +2592,7 @@ body:not(.home) .site-main {
   -webkit-box-shadow: #9284fe 0px -5.5rem 0px inset;
           box-shadow: #9284fe 0px -5.5rem 0px inset;
   color: #FFFFFF;
-  border-bottom: 3px solid #9284fe;
+  border-bottom: 2.5px solid #9284fe;
 }
 
 .post-navigation .nav-previous,
