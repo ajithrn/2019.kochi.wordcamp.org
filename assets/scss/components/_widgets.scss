@@ -200,16 +200,30 @@ h2.intro-text {
   transition: transform 0.3s ease-out;
 }
 
-
+#primary-sidebar {
+  margin: 3em auto;
+}
 .jetpack_subscription_widget {
   margin-top: 3em;
   margin-bottom: 3em;
   #subscribe-email {
     display: inline-block;
+    @media (min-width: $mobileSize) {
+      width: 60%;
+    }
+    input {
+      width: 100%;
+    }
   }
   #subscribe-submit {
+
     display: inline-block;
+    margin-left: 8px;
+    @media (min-width: $mobileSize) {
+      width: 38%;
+    }
     button {
+      padding-top: 13px;
       @extend .pushbutton-wide;
     }
 

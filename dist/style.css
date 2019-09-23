@@ -254,17 +254,17 @@ body:not(.home) .entry-content a {
   color: #000000;
   text-decoration: none;
   border-bottom: 1px solid #b356f3;
-  -webkit-transition: 0.4s, ease;
-  transition: 0.4s, ease;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
   -webkit-transition-property: all;
   transition-property: all;
 }
 
 body:not(.home) .entry-content a:hover {
   color: #b356f3;
-  border-bottom: 3px solid #9284fe;
-  -webkit-transition: 0.4s, ease;
-  transition: 0.4s, ease;
+  border-bottom: 2px solid #9284fe;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
   -webkit-transition-property: all;
   transition-property: all;
 }
@@ -295,15 +295,15 @@ body .entry-content ul li {
 }
 
 a {
-  -webkit-transition: 0.4s, ease;
-  transition: 0.4s, ease;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
   -webkit-transition-property: all;
   transition-property: all;
 }
 
 a:hover {
-  -webkit-transition: 0.4s, ease;
-  transition: 0.4s, ease;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
   -webkit-transition-property: all;
   transition-property: all;
 }
@@ -854,6 +854,10 @@ h2.intro-text {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
+#primary-sidebar {
+  margin: 3em auto;
+}
+
 .jetpack_subscription_widget {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -863,8 +867,29 @@ h2.intro-text {
   display: inline-block;
 }
 
+@media (min-width: 500px) {
+  .jetpack_subscription_widget #subscribe-email {
+    width: 60%;
+  }
+}
+
+.jetpack_subscription_widget #subscribe-email input {
+  width: 100%;
+}
+
 .jetpack_subscription_widget #subscribe-submit {
   display: inline-block;
+  margin-left: 8px;
+}
+
+@media (min-width: 500px) {
+  .jetpack_subscription_widget #subscribe-submit {
+    width: 38%;
+  }
+}
+
+.jetpack_subscription_widget #subscribe-submit button {
+  padding-top: 13px;
 }
 
 /* Widget latest News */
