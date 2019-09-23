@@ -155,11 +155,18 @@ th {
   }
 }
 
-.hentry {
+.hentry
+.error-404 {
   margin: 0 auto;
   max-width: 960px;
   padding: 3rem 1rem;
   width: calc(100% - 3rem);
+}
+// /module width patch
+.comments-area,
+.navigation.post-navigation {
+  @extend .hentry;
+  padding: 0rem 1rem;
 }
 
 .single-post {
@@ -240,13 +247,6 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link {
   }
 }
 
-.comments-area,
-.navigation.post-navigation {
-  max-width: 960px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 /*# Forms-*/
 

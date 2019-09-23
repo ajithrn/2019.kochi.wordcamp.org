@@ -409,11 +409,16 @@ th {
   white-space: pre;
 }
 
-.hentry {
+.hentry .error-404, .comments-area .error-404, .navigation.post-navigation .error-404 {
   margin: 0 auto;
   max-width: 960px;
   padding: 3rem 1rem;
   width: calc(100% - 3rem);
+}
+
+.comments-area,
+.navigation.post-navigation {
+  padding: 0rem 1rem;
 }
 
 .single-post .entry-title {
@@ -498,14 +503,6 @@ body:not(.home) .entry-content a.wordcamp-image__featured-image-link {
 body:not(.home) .entry-content a.wordcamp-image__featured-image-link:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.comments-area,
-.navigation.post-navigation {
-  max-width: 960px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /*# Forms-*/
