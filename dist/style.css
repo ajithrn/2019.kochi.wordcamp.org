@@ -640,10 +640,24 @@ textarea {
 #custom_html-5 .custom-html-widget a {
   background: #FFFFFF;
   color: #9284fe;
-  padding: 20px;
   text-transform: uppercase;
   font-size: 20px;
   display: block;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+#custom_html-5 .custom-html-widget a:hover {
+  background: #2C325F;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s, ease;
+  transition: 0.5s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 #custom_html-5 a {
@@ -2376,6 +2390,7 @@ h2.intro-text {
   .custom-header {
     border-bottom-left-radius: 0 100%;
     border-bottom-right-radius: 0 100%;
+    min-height: 500px;
   }
 }
 
@@ -2392,7 +2407,7 @@ h2.intro-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.5rem;
+  padding: 6rem 1.5rem;
   position: relative;
 }
 
@@ -2403,11 +2418,13 @@ h2.intro-text {
 
 body:not(.home) .custom-header {
   min-height: 200px;
-  padding-top: 90px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
   body:not(.home) .custom-header {
+    padding-top: 90px;
     min-height: 350px;
     background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg) bottom center no-repeat !important;
     background-size: cover;
@@ -2416,6 +2433,7 @@ body:not(.home) .custom-header {
 
 body:not(.home) .custom-header .custom-logo-link {
   padding-bottom: 0;
+  padding-top: 2rem;
 }
 
 body:not(.home) .custom-header img {
