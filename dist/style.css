@@ -856,6 +856,7 @@ h2.intro-text {
 
 #primary-sidebar {
   margin: 3em auto;
+  padding: 2em 1em;
 }
 
 .jetpack_subscription_widget {
@@ -874,7 +875,12 @@ h2.intro-text {
 }
 
 .jetpack_subscription_widget #subscribe-email input {
-  width: 100%;
+  width: 100% !important;
+  padding: 16px 10px;
+}
+
+.jetpack_subscription_widget #subscribe-email input:hover {
+  cursor: pointer;
 }
 
 .jetpack_subscription_widget #subscribe-submit {
