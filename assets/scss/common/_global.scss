@@ -203,19 +203,6 @@ body.home #primary {
   display: none;
 }
 
-#primary-sidebar {
-  background: #252525;
-  box-shadow: 0 16px 0 rgba(37, 37, 37, 0.2);
-  color: #fff;
-  padding: 3rem 1rem;
-
-  #subscribe-email {
-    input {
-      width: 80%;
-    }
-  }
-}
-
 .widget_blog_subscription {
   margin: 0 auto;
   max-width: 640px;
