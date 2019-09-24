@@ -1,6 +1,14 @@
 /* organizers */
-.avatar.avatar-100.photo {
-  box-shadow: 5px 5px 0 rgba(255,0,0,0.2);
-  border: 5px solid $primary;
-  border-radius:10px;
+.wordcamp-organizer {
+  .avatar.photo {
+    box-shadow: 5px 5px 0 rgba($primary, 0.2);
+    border: 5px solid $primary;
+    border-radius: 10px;
+    @include transition(0.15s, ease);
+
+    &:hover {
+      transform: scale(1.1);
+      @include transition(0.15s, ease);
+    }
+  }
 }

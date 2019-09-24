@@ -1417,8 +1417,8 @@ h2.intro-text {
 }
 
 .tix_tickets_table {
-  border-top: 3px double #d13144;
-  border-bottom: 3px double #d13144;
+  border-top: 3px double #b356f3;
+  border-bottom: 3px double #b356f3;
   margin-bottom: 1.5rem;
 }
 
@@ -1546,13 +1546,15 @@ h2.intro-text {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  -webkit-box-shadow: 3px 3px 0 rgba(255, 0, 0, 0.2);
-          box-shadow: 3px 3px 0 rgba(255, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 0 rgba(179, 86, 243, 0.2);
+          box-shadow: 3px 3px 0 rgba(179, 86, 243, 0.2);
   border: 3px solid #b356f3;
   border-radius: 10px;
   background-color: #FFFFFF;
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
+  -webkit-transition: 0.15s, ease;
+  transition: 0.15s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 #tix-attendees .tix-columns-3 {
@@ -2319,8 +2321,8 @@ h2.intro-text {
   background-size: cover;
   border-bottom-left-radius: 0 100%;
   border-bottom-right-radius: 0% 0% !important;
-  -webkit-box-shadow: 0 16px 0 rgba(255, 0, 0, 0.2);
-          box-shadow: 0 16px 0 rgba(255, 0, 0, 0.2);
+  -webkit-box-shadow: 0 16px 0 rgba(179, 86, 243, 0.2);
+          box-shadow: 0 16px 0 rgba(179, 86, 243, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -2478,11 +2480,24 @@ body:not(.home) .site-main {
 }
 
 /* organizers */
-.avatar.avatar-100.photo {
-  -webkit-box-shadow: 5px 5px 0 rgba(255, 0, 0, 0.2);
-          box-shadow: 5px 5px 0 rgba(255, 0, 0, 0.2);
+.wordcamp-organizer .avatar.photo {
+  -webkit-box-shadow: 5px 5px 0 rgba(179, 86, 243, 0.2);
+          box-shadow: 5px 5px 0 rgba(179, 86, 243, 0.2);
   border: 5px solid #b356f3;
   border-radius: 10px;
+  -webkit-transition: 0.15s, ease;
+  transition: 0.15s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.wordcamp-organizer .avatar.photo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.15s, ease;
+  transition: 0.15s, ease;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 /* post navigation */

@@ -11,7 +11,7 @@
   background-size: cover;
   border-bottom-left-radius: 0 100%;
   border-bottom-right-radius: 0% 0%!important;
-  box-shadow: 0 16px 0 rgba(255,0,0,0.2);
+  box-shadow: 0 16px 0 rgba($primary, 0.2);
   @media (max-width: $tabletSize) {
     border-bottom-left-radius: 0 100%;
     border-bottom-right-radius: 0 100%;
