@@ -1,78 +1,9 @@
 /* Widget latest News */
-
-.widget_recent_entries {
-  padding-top: 3rem;
-  .widget-title {
-    color: $primary;
-    font-size: 32px;
-    font-size: 2rem;
-    font-family: $font_primary;
-    text-align: center;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 3rem;
-    margin: 0;
-    @media (min-width: $tabletSize) {
-      flex-direction: row;
-    }
-  }
-  li {
-    width: 50%;
-  }
-  a {
-    display: inline-block;
-    color: $primary;
-    text-decoration: none;
-    max-width: 50%;
-    padding: 2rem 0 0;
-    position: static;
-    line-height: 1;
-    font-size: 24px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    &:hover {
-      color: #000;
-      &:after {
-        width: 5rem;
-      }
-    }
-    &:before {
-      content: '#WCKOCHI';
-      display: inline-block;
-      position: relative;
-      opacity: 0.1;
-      font-size: 1.3rem;
-      @media (min-width: $tabletSize) {
-        font-size: 4rem;
-      }
-      text-transform: uppercase;
-    }
-    &:after {
-      content: '';
-      margin-bottom: 0.5rem;
-    }
-    &::after {
-      background-color: $primary;
-      content: '';
-      display: block;
-      height: 2px;
-      margin-top: 1rem;
-      width: 4rem;
-      -webkit-transition: width 0.3s ease;
-      -o-transition: width 0.3s ease;
-      transition: width 0.3s ease;
-    }
-  }
-}
-
 .widget-title {
   display: none;
 }
-.widget_rss {
+.widget_rss,
+.widget_recent_entries {
   margin: 50px auto 30px;
   @media (min-width: $tabletSize) {
     margin: 120px auto 80px;
@@ -94,7 +25,7 @@
       @media (min-width: $tabletSize) {
         flex: 1 0 30%;
         margin-right: 5%;
-        &:nth-child(3n+0) {
+        &:nth-child(3n + 0) {
           margin-right: 0;
         }
       }
@@ -145,5 +76,20 @@
   }
   .rssSummary {
     margin-top: 1rem;
+  }
+}
+
+.widget_recent_entries {
+  padding-top: 3rem;
+  .widget-title {
+    color: $primary;
+    font-size: 32px;
+    font-size: 2rem;
+    font-family: $font_primary;
+    text-align: center;
+  }
+  ul {
+    padding-top: 1rem;
+    padding: 0 0 3rem 0;
   }
 }
