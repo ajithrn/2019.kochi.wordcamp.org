@@ -1,13 +1,14 @@
 /* organizers */
 .wordcamp-organizer {
   .avatar.photo {
-    box-shadow: 5px 5px 0 rgba($primary, 0.2);
-    border: 5px solid $primary;
+    box-shadow: 5px 5px 0 rgba($secondary, 0.3);
+    border: 5px solid rgba($secondary, 0.9);
     border-radius: 10px;
     @include transition(0.15s, ease);
+    max-width: 85%;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.02);
       @include transition(0.15s, ease);
     }
   }

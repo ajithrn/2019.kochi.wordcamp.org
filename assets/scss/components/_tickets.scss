@@ -182,8 +182,8 @@
     margin:0;
     width:3rem;
     height:3rem;
-    box-shadow: 3px 3px 0 rgba($primary, 0.2);
-    border: 3px solid $primary;
+    box-shadow: 3px 3px 0 rgba($secondary, 0.3);
+    border: 3px solid rgba($secondary, 0.9);
     border-radius:10px;
     background-color: $white;
     @include transition (0.15s, ease);

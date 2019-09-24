@@ -1546,9 +1546,9 @@ h2.intro-text {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  -webkit-box-shadow: 3px 3px 0 rgba(179, 86, 243, 0.2);
-          box-shadow: 3px 3px 0 rgba(179, 86, 243, 0.2);
-  border: 3px solid #b356f3;
+  -webkit-box-shadow: 3px 3px 0 rgba(146, 132, 254, 0.3);
+          box-shadow: 3px 3px 0 rgba(146, 132, 254, 0.3);
+  border: 3px solid rgba(146, 132, 254, 0.9);
   border-radius: 10px;
   background-color: #FFFFFF;
   -webkit-transition: 0.15s, ease;
@@ -2481,19 +2481,20 @@ body:not(.home) .site-main {
 
 /* organizers */
 .wordcamp-organizer .avatar.photo {
-  -webkit-box-shadow: 5px 5px 0 rgba(179, 86, 243, 0.2);
-          box-shadow: 5px 5px 0 rgba(179, 86, 243, 0.2);
-  border: 5px solid #b356f3;
+  -webkit-box-shadow: 5px 5px 0 rgba(146, 132, 254, 0.3);
+          box-shadow: 5px 5px 0 rgba(146, 132, 254, 0.3);
+  border: 5px solid rgba(146, 132, 254, 0.9);
   border-radius: 10px;
   -webkit-transition: 0.15s, ease;
   transition: 0.15s, ease;
   -webkit-transition-property: all;
   transition-property: all;
+  max-width: 85%;
 }
 
 .wordcamp-organizer .avatar.photo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   -webkit-transition: 0.15s, ease;
   transition: 0.15s, ease;
   -webkit-transition-property: all;
