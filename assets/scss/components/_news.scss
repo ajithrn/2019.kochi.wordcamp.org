@@ -80,7 +80,6 @@
 }
 
 .widget_recent_entries {
-  padding-top: 3rem;
   .widget-title {
     color: $primary;
     font-size: 32px;
@@ -90,6 +89,11 @@
   }
   ul {
     padding-top: 1rem;
-    padding: 0 0 3rem 0;
+    padding: 3rem 0;
+    li {
+      @media (min-width: $tabletSize) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }

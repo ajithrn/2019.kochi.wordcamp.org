@@ -76,7 +76,7 @@ input[type='submit'] {
   font-weight: normal;
   letter-spacing: 1px;
   padding: 1rem 4rem;
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   padding-bottom: 1rem;
   text-align: center;
   text-decoration: none;
@@ -256,7 +256,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 0px;
-  padding: 0.6em 0.5em;
+  padding: 15.5px 10px;
   &:focus {
     color: #111;
   }
@@ -270,4 +270,8 @@ textarea {
   width: 100%;
   max-width: 100%;
   padding: 0.6em 0.5em;
+}
+
+.search-form {
+
 }

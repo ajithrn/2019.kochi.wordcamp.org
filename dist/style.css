@@ -323,7 +323,7 @@ input[type='submit'] {
   font-weight: normal;
   letter-spacing: 1px;
   padding: 1rem 4rem;
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   padding-bottom: 1rem;
   text-align: center;
   text-decoration: none;
@@ -515,7 +515,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 0px;
-  padding: 0.6em 0.5em;
+  padding: 15.5px 10px;
 }
 
 input[type='text']:focus,
@@ -903,7 +903,7 @@ h2.intro-text {
 }
 
 .jetpack_subscription_widget #subscribe-submit button {
-  padding-top: 13px;
+  padding-top: 0.79rem;
 }
 
 /* Widget latest News */
@@ -1030,10 +1030,6 @@ h2.intro-text {
   margin-top: 1rem;
 }
 
-.widget_recent_entries {
-  padding-top: 3rem;
-}
-
 .widget_recent_entries .widget-title {
   color: #b356f3;
   font-size: 32px;
@@ -1044,7 +1040,13 @@ h2.intro-text {
 
 .widget_recent_entries ul {
   padding-top: 1rem;
-  padding: 0 0 3rem 0;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .widget_recent_entries ul li {
+    margin-bottom: 4rem;
+  }
 }
 
 /* Widget Sponsors */
