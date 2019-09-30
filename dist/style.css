@@ -2082,6 +2082,7 @@ h2.intro-text {
   width: 100%;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
