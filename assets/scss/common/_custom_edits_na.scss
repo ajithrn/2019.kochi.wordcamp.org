@@ -1,0 +1,113 @@
+.wordcamp-post-list.has-layout-grid .wordcamp-post-list__post {
+	overflow: visible;
+} 
+.wcorg-sponsors.container {
+    width: auto;
+}
+
+@media screen and (max-width: 350px) {
+    #content-widget-4 #subscribe-email input {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    .jetpack_subscription_widget #subscribe-submit button {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Desktop */
+
+
+.menu-toggle:after {
+
+	margin: 0 0 0 2%;
+
+}
+
+
+.widget_rss ul li, .widget_recent_entries ul li {
+	    padding: 2% 0 0 4%;
+}
+
+.wcorg-sponsors > div h2 {
+	border-top: none;
+	
+}
+	
+	.card {
+			margin: -13% 0 0 0;
+	}
+	
+	#masthead > div > div.site-branding {
+
+	margin: -20% 0 0 0;
+
+}
+	
+	/* Post page */
+	body:not(.home) .custom-header {
+	    padding-top: 20%;
+
+}
+
+article > header > div.entry-image > img {
+	width: 100%;
+	height: auto;
+}
+
+	/* Sponser page */
+	.sponsor-page-grid {
+	margin-left: -9%;
+}
+
+	img.wordcamp-image__featured-image {
+	width: 100%;
+		height: auto;
+	}
+	
+#post-12 > div > ul > li:nth-child(2) > div > div.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-center {
+	margin: 0 0 -11% -5%;
+}
+
+
+#post-12 > div > ul > li:nth-child(3) > div > div.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-center {
+	margin: 0 0 -9% -1%;
+}
+
+
+
+#post-12 > div > ul > li:nth-child(4) > div > div.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-center {
+	margin: 13% 0 0 -2%;
+}
+
+#post-12 > div > ul > li:nth-child(5) > div > div.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-center {
+	margin: 0 0 -10% -4%;
+}
+
+	
+	/* Organizers page */
+	
+	.wordcamp-organizer .avatar.photo {
+		width: 100%;
+		height: auto;
+	}
+	
+	#post-14 > div > ul > li > div > div.wordcamp-block__item-content.wordcamp-organizers__content.is-full {
+	display: none;
+}
+	
+	
+#post-14 > div > ul > li:nth-child(7) > div > h3 {
+	white-space: nowrap;
+    font-size: 17px;
+}
+
+#post-14 > div > ul {
+	margin-left: -7%;
+}
+}

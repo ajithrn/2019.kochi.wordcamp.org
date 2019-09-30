@@ -226,8 +226,13 @@ h2.intro-text {
   margin-bottom: 3em;
   #subscribe-email {
     display: inline-block;
+    overflow: hidden;
+    margin-bottom: 0;
+    width: 100%;
     @media (min-width: $mobileSize) {
-      width: 60%;
+      width: 59%;
+      overflow: visible;
+      margin-bottom: 1em;
     }
     input {
       width: 100%!important;
@@ -236,14 +241,20 @@ h2.intro-text {
   }
   #subscribe-submit {
 
-    display: inline-block;
-    margin-left: 8px;
+    display: inline-block;    
+    width: 100%;
     @media (min-width: $mobileSize) {
       width: 38%;
+      margin-left: 8px;
     }
     button {
-      padding-top: 0.79rem;
       @extend .pushbutton-wide;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      @media (min-width: $mobileSize) {
+        padding-top: 0.79rem;
+      }
     }
 
   }

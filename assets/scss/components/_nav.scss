@@ -21,33 +21,38 @@
   line-height: 2.5;
   text-decoration: none;
   background: $white;
+  overflow: hidden;
   &:hover {
     cursor: pointer;
   }
   &:before {
     content: '#WCKOCHI19';
     visibility: visible;
-    width: 100%;
-    padding-left: 30px;
+     width: auto;
+    padding-left: 5vw;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex: 1;
     position: absolute;
     z-index: 3;
     color: $primary;
     font-size: 1.4rem;
+    left: 0;
   }
   &:after {
     content: '☰';
     position: absolute;
     display: flex;
-    width: 100%;
-    padding-right: 30px;
+     width: auto;
+    padding-right: 5vw;
     align-items: flex-end;
     justify-content: end;
-    z-index: 2;
+    z-index: 4;
+    color: $primary;
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    right: 0;
   }
 
   @media (min-width: $tabletSize) {
