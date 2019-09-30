@@ -2156,8 +2156,15 @@ h2.intro-text {
   content: '⌄';
   display: block;
   padding-left: 12px;
-  padding-bottom: 14px;
-  font-size: 25px;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .secondary-navigation.page-navigation-container .menu-primary-menu-container .menu li.menu-item.menu-item-has-children > a:after {
+    padding-bottom: 14px;
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 768px) {

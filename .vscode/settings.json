@@ -16,7 +16,7 @@
     ".vscode/**"
  ],
  "liveSassCompile.settings.includeItems": [
-    "assets/scss/main.scss"
+    "assets/scss/*"
  ],
  "liveSassCompile.settings.generateMap": true,
  "liveSassCompile.settings.autoprefix": [

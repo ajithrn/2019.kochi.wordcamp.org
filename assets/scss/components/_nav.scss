@@ -154,9 +154,13 @@
               &:after {
                 content: '⌄';
                 display: block;
-                padding-left: 12px;
-                padding-bottom: 14px;
-                font-size: 25px;
+                padding-left: 12px;                
+                font-size: 16px;
+                padding-bottom: 8px;
+                @media (min-width: $tabletSize) {
+                  padding-bottom: 14px;
+                  font-size: 25px;
+                }
               }
             }
           }
