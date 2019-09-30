@@ -16,7 +16,7 @@
     border: 5px solid rgba($secondary, 0.9);
     border-radius: 10px;
     @include transition(0.15s, ease);
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     @media (min-width: $mobileSize) {
       max-width: 85%;
@@ -47,7 +47,7 @@
 /** sponsors */
 img {
   &.wordcamp-image__featured-image {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
   }
 }

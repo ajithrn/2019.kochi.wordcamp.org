@@ -2555,7 +2555,7 @@ body:not(.home) .site-main {
   transition: 0.15s, ease;
   -webkit-transition-property: all;
   transition-property: all;
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
 }
 
@@ -2605,7 +2605,7 @@ body:not(.home) .site-main {
 
 /** sponsors */
 img.wordcamp-image__featured-image {
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
 }
 
