@@ -4,6 +4,8 @@
 }
 .widget_rss,
 .widget_recent_entries {
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 50px auto 30px;
   @media (min-width: $tabletSize) {
     margin: 120px auto 80px;
@@ -36,6 +38,7 @@
         font-size: 24px;
         margin-bottom: 20px;
         position: relative;
+        line-height: 1.2;
         &:after {
           background-color: $primary;
           content: '';

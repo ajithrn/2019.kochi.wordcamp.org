@@ -1,14 +1,6 @@
 /* organizers */
 .wordcamp-organizers {
   padding-left: 0;
-  grid-template-columns: repeat(1, 1fr);
-
-  @media (min-width: $mobileSize) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (min-width: $desktopSize) {
-    grid-template-columns: repeat(3, 1fr);
-  }
   li.wordcamp-post-list__post {
     margin-bottom: 3em;
     h3 {
@@ -41,12 +33,21 @@
       display: block;
     }
   }
+  &.wordcamp-post-list.has-layout-grid {
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: $mobileSize) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $desktopSize) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 /** sponsors */
 img {
   &.wordcamp-image__featured-image {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
   }
 }

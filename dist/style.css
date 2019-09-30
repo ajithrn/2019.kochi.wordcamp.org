@@ -932,6 +932,8 @@ h2.intro-text {
 
 .widget_rss,
 .widget_recent_entries {
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 50px auto 30px;
 }
 
@@ -1000,6 +1002,7 @@ h2.intro-text {
   font-size: 24px;
   margin-bottom: 20px;
   position: relative;
+  line-height: 1.2;
 }
 
 .widget_rss ul li a:after,
@@ -2405,7 +2408,7 @@ body:not(.home) .custom-header {
 @media (min-width: 768px) {
   body:not(.home) .custom-header {
     padding-top: 90px;
-    background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_inner_header_bg.jpg) bottom center no-repeat !important;
+    background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_inner_header_bg.jpg) bottom right no-repeat !important;
     background-size: cover;
   }
 }
@@ -2528,22 +2531,6 @@ body:not(.home) .site-main {
 /* organizers */
 .wordcamp-organizers {
   padding-left: 0;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 500px) {
-  .wordcamp-organizers {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .wordcamp-organizers {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .wordcamp-organizers li.wordcamp-post-list__post {
@@ -2597,9 +2584,28 @@ body:not(.home) .site-main {
   }
 }
 
+.wordcamp-organizers.wordcamp-post-list.has-layout-grid {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 500px) {
+  .wordcamp-organizers.wordcamp-post-list.has-layout-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .wordcamp-organizers.wordcamp-post-list.has-layout-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /** sponsors */
 img.wordcamp-image__featured-image {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
 }
 
