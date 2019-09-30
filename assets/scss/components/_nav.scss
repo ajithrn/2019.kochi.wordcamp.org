@@ -97,6 +97,8 @@
         overflow: hidden;
         @media (min-width: $tabletSize) {
           flex-direction: row;
+          overflow: visible;
+
         }
         li.menu-item {
           background: transparent;

@@ -2091,6 +2091,7 @@ h2.intro-text {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    overflow: visible;
   }
 }
 
