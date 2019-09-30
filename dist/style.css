@@ -2147,6 +2147,20 @@ h2.intro-text {
 }
 
 @media (min-width: 768px) {
+  .secondary-navigation.page-navigation-container .menu-primary-menu-container .menu li.menu-item.menu-item-has-children > a:before {
+    width: 80%;
+  }
+}
+
+.secondary-navigation.page-navigation-container .menu-primary-menu-container .menu li.menu-item.menu-item-has-children > a:after {
+  content: '⌄';
+  display: block;
+  padding-left: 12px;
+  padding-bottom: 14px;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
   .secondary-navigation.page-navigation-container .menu-primary-menu-container .menu li.menu-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2200,7 +2214,14 @@ h2.intro-text {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 15px;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .secondary-navigation.page-navigation-container .menu-primary-menu-container .menu li.menu-item .sub-menu .menu-item a {
+    padding-left: 0px;
+  }
 }
 
 @media (min-width: 768px) {

@@ -28,7 +28,7 @@
   &:before {
     content: '#WCKOCHI19';
     visibility: visible;
-     width: auto;
+    width: auto;
     padding-left: 5vw;
     display: flex;
     justify-content: flex-start;
@@ -43,7 +43,7 @@
     content: '☰';
     position: absolute;
     display: flex;
-     width: auto;
+    width: auto;
     padding-right: 5vw;
     align-items: flex-end;
     justify-content: end;
@@ -144,6 +144,22 @@
               }
             }
           }
+          &.menu-item-has-children {
+            > a {
+              &:before {
+                @media (min-width: $tabletSize) {
+                  width: 80%;
+                }
+              }
+              &:after {
+                content: '⌄';
+                display: block;
+                padding-left: 12px;
+                padding-bottom: 14px;
+                font-size: 25px;
+              }
+            }
+          }
           @media (min-width: $tabletSize) {
             display: flex;
             align-items: center;
@@ -173,7 +189,11 @@
               a {
                 width: 100%;
                 justify-content: flex-start;
-                padding-left: 15px;
+                padding-left: 20px;
+                text-transform: capitalize;
+                @media (min-width: $tabletSize) {
+                  padding-left: 0px;
+                }
               }
             }
           }
@@ -196,7 +216,6 @@
                 &.menu-item {
                   &.current-menu-item {
                     & > a {
-                      
                       &:before {
                         display: none;
                       }
