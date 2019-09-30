@@ -2405,7 +2405,7 @@ body:not(.home) .custom-header {
 @media (min-width: 768px) {
   body:not(.home) .custom-header {
     padding-top: 90px;
-    background: url(https://2019.kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg) bottom center no-repeat !important;
+    background: url(https://2019kochi.wordcamp.org/files/2019/09/WCK_2019_Bg.jpg) bottom center no-repeat !important;
     background-size: cover;
   }
 }
@@ -2413,11 +2413,17 @@ body:not(.home) .custom-header {
 body:not(.home) .custom-header .custom-logo-link {
   padding-bottom: 2rem;
   padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body:not(.home) .custom-header img {
   max-height: 250px !important;
-  max-width: none !important;
+  max-width: 85%;
   height: auto;
   width: auto;
 }
