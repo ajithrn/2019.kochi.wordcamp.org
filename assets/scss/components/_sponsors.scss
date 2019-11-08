@@ -208,7 +208,7 @@
   img {
     display: block;
     margin: 0 auto;
-    max-width:90%;
+    max-width: 90%;
     height: auto;
     @media (min-width: $mobileSize) {
       max-width: 100%;
@@ -273,5 +273,69 @@
 @media (min-width: $mobileSize) {
   .wcorg-sponsor-level-editor .wcorg-sponsor {
     width: 15%;
+  }
+}
+
+/** sponsor widget */
+.wcb_widget_sponsors {
+  max-width: 60em;
+  margin: 0 auto;
+  .sponsor-level {
+    &-title {
+      font-weight: bold;
+      &:before {
+        border-top: 2px solid #b356f3;
+      }
+      &:after {
+        border-color:#FFFFFF;
+        width: 250px;
+      }
+    }
+    .sponsor-logo {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+    &.gold {
+      .sponsor-level-title {
+        font-size: 2.6rem;
+      }
+    }
+    &.silver {
+      .sponsor-level-title {
+        font-size: 2.2rem;
+        color: #757575;
+        &:before {
+          border-color:#757575;
+        }
+        &:after {
+
+        }
+      }
+    }
+    &.bronze {
+      .sponsor-level-title {
+        font-size: 1.7rem;
+        color: #9d5944;
+        &:before {
+          border-color:#9d5944;
+        }
+        &:after {
+
+        }
+      }
+    }
+    &.friendship {
+      .sponsor-level-title {
+        font-size: 1.1rem;
+        color: #4B4B4B;
+        &:before {
+          border-color:#4B4B4B;
+        }
+        &:after {
+
+        }
+      }
+    }
   }
 }
