@@ -288,17 +288,26 @@
       }
       &:after {
         border-color:#FFFFFF;
-        width: 250px;
+        width: 300px;
+        border-style: solid;
       }
     }
     .sponsor-logo {
       display: block;
       visibility: visible;
       opacity: 1;
+      img{
+        padding: 15px;
+      }
     }
     &.gold {
       .sponsor-level-title {
         font-size: 2.6rem;
+      }
+      .sponsor-logo {
+        img {
+          max-height: 100px;
+        }
       }
     }
     &.silver {
@@ -308,8 +317,10 @@
         &:before {
           border-color:#757575;
         }
-        &:after {
-
+      }
+      .sponsor-logo {
+        img {
+          max-height: 75px;
         }
       }
     }
@@ -320,8 +331,10 @@
         &:before {
           border-color:#9d5944;
         }
-        &:after {
-
+      }
+      .sponsor-logo {
+        img {
+          max-height: 55px;
         }
       }
     }
@@ -332,8 +345,10 @@
         &:before {
           border-color:#4B4B4B;
         }
-        &:after {
-
+      }
+      .sponsor-logo {
+        img {
+          max-height: 40px;
         }
       }
     }

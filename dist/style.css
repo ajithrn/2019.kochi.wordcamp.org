@@ -1406,7 +1406,8 @@ h2.intro-text {
 
 .wcb_widget_sponsors .sponsor-level-title:after {
   border-color: #FFFFFF;
-  width: 250px;
+  width: 300px;
+  border-style: solid;
 }
 
 .wcb_widget_sponsors .sponsor-level .sponsor-logo {
@@ -1415,8 +1416,16 @@ h2.intro-text {
   opacity: 1;
 }
 
+.wcb_widget_sponsors .sponsor-level .sponsor-logo img {
+  padding: 15px;
+}
+
 .wcb_widget_sponsors .sponsor-level.gold .sponsor-level-title {
   font-size: 2.6rem;
+}
+
+.wcb_widget_sponsors .sponsor-level.gold .sponsor-logo img {
+  max-height: 100px;
 }
 
 .wcb_widget_sponsors .sponsor-level.silver .sponsor-level-title {
@@ -1428,6 +1437,10 @@ h2.intro-text {
   border-color: #757575;
 }
 
+.wcb_widget_sponsors .sponsor-level.silver .sponsor-logo img {
+  max-height: 75px;
+}
+
 .wcb_widget_sponsors .sponsor-level.bronze .sponsor-level-title {
   font-size: 1.7rem;
   color: #9d5944;
@@ -1437,6 +1450,10 @@ h2.intro-text {
   border-color: #9d5944;
 }
 
+.wcb_widget_sponsors .sponsor-level.bronze .sponsor-logo img {
+  max-height: 55px;
+}
+
 .wcb_widget_sponsors .sponsor-level.friendship .sponsor-level-title {
   font-size: 1.1rem;
   color: #4B4B4B;
@@ -1444,6 +1461,10 @@ h2.intro-text {
 
 .wcb_widget_sponsors .sponsor-level.friendship .sponsor-level-title:before {
   border-color: #4B4B4B;
+}
+
+.wcb_widget_sponsors .sponsor-level.friendship .sponsor-logo img {
+  max-height: 40px;
 }
 
 /* Widget Tickets */
