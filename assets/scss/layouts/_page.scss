@@ -2,7 +2,7 @@
 .wordcamp-organizers {
   padding-left: 0;
   li.wordcamp-post-list__post {
-    margin-bottom: 3em;
+    margin-bottom: 0em;
     h3 {
       font-size: 1.1em;
       white-space: nowrap;
@@ -28,10 +28,7 @@
     }
   }
   .wordcamp-block__item-content.wordcamp-organizers__content {
-    display: none;
-    @media (min-width: $mobileSize) {
-      display: block;
-    }
+      display: block;    
   }
   &.wordcamp-post-list.has-layout-grid {
     grid-template-columns: repeat(1, 1fr);

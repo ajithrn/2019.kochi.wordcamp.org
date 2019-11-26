@@ -2641,7 +2641,7 @@ body:not(.home) .site-main {
 }
 
 .wordcamp-organizers li.wordcamp-post-list__post {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 
 .wordcamp-organizers li.wordcamp-post-list__post h3 {
@@ -2682,13 +2682,7 @@ body:not(.home) .site-main {
 }
 
 .wordcamp-organizers .wordcamp-block__item-content.wordcamp-organizers__content {
-  display: none;
-}
-
-@media (min-width: 500px) {
-  .wordcamp-organizers .wordcamp-block__item-content.wordcamp-organizers__content {
-    display: block;
-  }
+  display: block;
 }
 
 .wordcamp-organizers.wordcamp-post-list.has-layout-grid {
